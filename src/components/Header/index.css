@@ -1,0 +1,21 @@
+header {
+    padding: 40px calc(50% - 496px);
+    background-color: #9aa0a6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity:0.9;
+    filter:alpha(opacity=50);
+ -moz-opacity: 0.5;
+    ;
+    z-index:-1;
+}
+header .rrr {
+    display: flex;
+flex-direction: column;
+justify-content: center;
+text-decoration: none;
+color: inherit;
+line-height: 28px;
+margin: 0;
+}
