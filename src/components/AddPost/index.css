@@ -1,0 +1,35 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.PPP {
+    display: flex;
+    justify-content: center;
+}
+
+.YYY {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 50px;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 5px;
+    border-color: black;
+box-sizing: border-box;
+
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+.OOO {
+    color: rgb(8, 9, 9);
+    border-radius: 5px;
+text-align: inherit;
+}

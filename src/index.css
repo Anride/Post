@@ -24,9 +24,9 @@ body {
 }
 
 .sss {
-	display: grid;
+	/* display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-template-areas: inherit;
+	grid-template-areas: inherit; */
 	padding: 18px;
 	border-radius: 18px;
 	box-shadow: 5px 5px 15px 0 rgba(226, 228, 226, 0.099);
@@ -35,7 +35,11 @@ body {
 	position: relative;
 	border-style: ridge;
 	border-color: forestgreen;
-
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+	grid-area: span;
 
 }
 
@@ -43,25 +47,35 @@ body {
 	display: flex;
 	justify-content: center;
 }
-.wrap {
-	padding: 20px;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 20px;
-	grid-template-rows: repeat(4, 100px);
+
+
+body {
+	font-family: "Nunito", "Arial", "Helvetica", sans-serif;
 }
+
 .post {
-	padding: 20px;
-	text-align: center;
-	border: 1px solid #777;
-	border-radius: 10px;
-}
-.wrap {
-	padding: 20px;
+	border: 1px solid;
+	margin: 5px;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 20px;
-	grid-template-rows: repeat(4, 120px);
+	grid-template-columns: repeat(3, 2fr);
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+	position: relative;
+
+
+}
+
+.post img {
+	width: 100%;
+	border: 1px solid;
+
+}
+
+.post .delete {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
 }
 .pages {
 	display: flex;
@@ -69,7 +83,7 @@ body {
 	gap: 10px;
 }
 .page {
-	border: 1px solid green;
+	border: 1px solid black;
 	width: 20px;
 	height: 20px;
 	padding: 4px;
@@ -81,10 +95,4 @@ body {
 	cursor: pointer;
 	text-decoration: none;
 	color: inherit;
-}
-
-.pages {
-	display: flex;
-	justify-content: center;
-	gap: 10px;
 }

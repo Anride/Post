@@ -1,0 +1,8 @@
+* {
+    padding: 10px;
+    display: grid;
+    gap: 40px;
+    margin: 40px;
+    grid-template-columns: min-content;
+   
+}
